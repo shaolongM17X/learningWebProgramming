@@ -1,0 +1,35 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+.app {
+	display: inline-flex;
+}
+
+.description {
+	color: #7C8B88;
+	width: 70%;
+	max-width: 705px;
+	font: Helvetica;
+	margin: 30px;
+	font-size: 125%;
+}
+
+.screenshot {
+	max-width: 460px;
+	width: 448px;
+	margin-top: 30px;
+	margin-right: 120px;
+}
+
+h1 {
+	height: 150px;
+	background: #33BEBE;
+	padding-top: 70px;
+	font-size: 350%;
+	padding-left: 40px;
+	color: white;
+}
