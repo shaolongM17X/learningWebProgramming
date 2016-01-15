@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex!</title>
+	<style type="text/css">
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.box {
+			height: 100px;
+			width: 100%;
+		}
+
+		header {
+			width: 100%
+			
+		}
+
+		.lime {
+			order:1;
+			background-color: lime;
+		}
+
+		.red {
+			width: 50%;
+			order: 2;
+			background-color: red;
+		}
+
+		.orange {
+			width: 50%;
+			order:3;
+			background-color: orange;
+		}
+
+		footer {
+			width: 100%;
+			order:4;
+			background-color: black;
+		}
+
+		.light_blue {
+			width: 20%;
+			order:5;
+			background-color: #add8e6;
+		}
+
+		.dark_blue {
+			width: 60%;
+			order:6;
+			background-color: #000080;
+ 		}
+
+ 		.green {
+ 			width: 20%;
+ 			order:7;
+ 			background-color: green;
+ 		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="box lime"></header>
+		<div class="box dark_blue"></div>
+		<div class="box light_blue"></div>
+		<div class="box green"></div>
+		<div class="box red"></div>
+		<div class="box orange"></div>
+		<footer class="box"></footer>
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mostly Fluid</title>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<style type="text/css">
+		@media screen and (min-width: 450px) {
+			.light_blue, .green {
+				width: 50%;
+			}
+		}
+
+		@media screen and (min-width: 550px) {
+			.dark_blue {width: 50%;}
+			.red, .orange, .green {
+				width: 33.333%;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+			.container {
+				width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box dark_blue"></div>
+		<div class="box light_blue"></div>
+		<div class="box green"></div>
+		<div class="box red"></div>
+		<div class="box orange"></div>
+
+	</div>
+</body>
+</html>
