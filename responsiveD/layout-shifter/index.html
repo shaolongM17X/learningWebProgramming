@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<title>Index Shifter!</title>
+	<style type="text/css">
+		.container {
+			width: 100%;
+		}
+
+		@media screen and (min-width: 500px) {
+			.dark_blue {
+				width: 50%;
+			}
+
+			#container2 {
+				width: 50%;
+			}
+		}
+
+		@media screen and (min-width: 600px) {
+			.red {
+				order: -1;
+				width: 25%;
+			}
+
+			.dark_blue {
+				order: 1;
+				width: 25%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box dark_blue"></div>
+		<div class="container" id="container2">
+			<div class="box light_blue"></div>
+			<div class="green box"></div>
+		</div>
+		<div class="box red"></div>
+
+	</div>
+</body>
+</html>
