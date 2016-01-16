@@ -129,6 +129,8 @@ main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*
@@ -374,4 +376,43 @@ footer li {
 footer a {
   text-decoration: none;
   color: #333;
+}
+
+@media screen and (min-width: 600px) {
+  .weather {
+    width: 50%;
+  }
+  .scores {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 715px) {
+  .hero {
+    width: 50%;
+  }
+
+  .top-news {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #drawer {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
