@@ -1,0 +1,230 @@
+body {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+.header {
+	position: relative;
+	height: 70px;
+	background-color: #4527A0; 
+}
+
+.header img {
+	position:absolute;
+	right: 5px;
+	bottom: 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+
+li {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-container {
+	position: absolute;
+	width: 100%;
+	bottom: 7px;
+}
+
+.nav {
+	display: flex;
+	width: 80%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 10px;
+	vertical-align: bottom;
+}
+
+.nav .logo h1 {
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+.nav li {
+	vertical-align: bottom;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+
+.nav a{
+	display: block;
+	padding: 10px;
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+h1 {
+	margin: 0;
+}
+
+.main-content img {
+	width: 100%;
+}
+
+.image-container {
+	position: relative;
+}
+
+.image-container img {
+	z-index: -1;
+}
+
+.image-container .img-description {
+	position: absolute;
+	width: 40%;
+	height: 30%;
+	bottom: 0px;
+	background-color: rgba(255,255,255,0.4);
+	right: 13%;
+	text-align: right;
+	color: black;
+}
+
+.content {
+	background-color: #FAFAFA;
+	height: 400px;
+}
+
+.card-container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+}
+
+.card {
+	width: 32%;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  	padding:5px;
+  	background-color: white;
+  	margin-right: 2%
+}
+
+.card:last-child {
+	margin-right: 0;
+}
+
+.card-img {
+	height: 140px;
+}
+
+.card-content {
+	padding: 10px;
+}
+
+.self {
+	width: 60%;
+	margin: auto;
+	height: 350px;
+}
+
+.img-wrapper-center {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.self img {
+	border-radius: 50%;
+	margin-top: -30px;
+}
+
+.self h2 {
+	text-align: center;
+}
+
+.footer-nav {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.before-footer {
+	text-align: center;
+	display: flex;
+	
+
+}
+
+.before-footer li {
+	display: block;
+
+	margin: 0 auto;
+}
+
+.before-footer a {
+	display: block;
+	padding: 10px;
+	min-width: 48px;
+}
+
+.footer {
+	background-color: black;
+	height: 400px;
+}
+
+.separator {
+	background-color: rgba(255,255,255,0.4);
+	height: 1px;
+}
+
+.col-5 {
+	width: 20%;
+}
+
+.row {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 40px;
+	display: flex;
+}
+
+p {
+	color: white;
+}
+
+.banquan {
+	margin-top: 40px;
+	position: relative;
+
+	height: 50px;
+}
+
+.msg {
+	width: 4em;
+	position: absolute;
+
+	left: 0px;
+	right: 0px;
+
+	margin: auto;
+}
+
+.msg-cat {
+	width: 30px;
+	position: absolute;
+	padding-top: 50px;
+	left: 0px;
+	right: 0px;
+
+	margin: auto;
+}
