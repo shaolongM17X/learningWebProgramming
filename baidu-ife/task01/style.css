@@ -1,230 +1,226 @@
 body {
-	max-width: 980px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-}
-.header {
-	position: relative;
-	height: 70px;
-	background-color: #4527A0; 
-}
-
-.header img {
-	position:absolute;
-	right: 5px;
-	bottom: 0px;
-}
-
-ul {
-	list-style-type: none;
 	margin: 0;
-	padding:0;
+	font-family: "SimSuncss", sans-serif;
 }
 
-li {
+header {
+	background-color: #311B92;
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+
+header h1 {
+	margin: 0px;
 	color: white;
+	position: absolute;
+	bottom: 5px;
 }
 
-a {
+nav a {
+	display: inline-block;
+	padding: 10px 14px 10px 14px;
+	color: white;
 	text-decoration: none;
-	color: white;
+	text-align: center;
+	font-size: 14px;
 }
 
-.nav-container {
+header nav {
 	position: absolute;
-	width: 100%;
-	bottom: 7px;
+	bottom: 5px;
+	right: 0px;
 }
 
-.nav {
-	display: flex;
-	width: 80%;
+
+.content-wrapper {
+	width: 100%;
 	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	bottom: 10px;
-	vertical-align: bottom;
-}
-
-.nav .logo h1 {
-	font-size: 20px;
-	text-align: center;
-	padding: 10px;
-	padding-bottom: 0px;
-}
-
-.nav li {
-	vertical-align: bottom;
-}
-
-.logo {
-	margin-right: auto;
-}
-
-
-.nav a{
-	display: block;
-	padding: 10px;
-	text-align: center;
-	padding-bottom: 0px;
-}
-
-h1 {
-	margin: 0;
-}
-
-.main-content img {
-	width: 100%;
-}
-
-.image-container {
+	max-width: 980px;
+	margin: 0 auto;
 	position: relative;
 }
 
-.image-container img {
-	z-index: -1;
+.github {
+	background-image: url("icon-github.png");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 34px;
 }
 
-.image-container .img-description {
+header .github {
 	position: absolute;
-	width: 40%;
-	height: 30%;
 	bottom: 0px;
-	background-color: rgba(255,255,255,0.4);
-	right: 13%;
+	right: 10px;
+}
+
+/*  Main part */
+img {
+	width: 100%;
+}
+
+.image-description {
+	font-size: 14px;
+	padding: 10px 10px 30px 10px;
+}
+
+.banner {
+	position: relative;
+}
+
+.banner .image-description {
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+	width: 30%;
+	height: 20%;
+	background: rgba(255,255,255,0.4);
+	background: linear-gradient(
+				rgba(255,255,255, .7),
+				rgba(255,255,255, 0)
+				);
+}
+
+.banner h2 {
+	margin: 0;
+	margin-bottom: 12px;
 	text-align: right;
-	color: black;
+}
+
+.image-description p {
+	text-indent: 40px;
+	line-height: 150%;
 }
 
 .content {
-	background-color: #FAFAFA;
-	height: 400px;
-}
-
-.card-container {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-
+	max-width: 980px;
 	display: flex;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	height: 400px;
+	background-color: #FAFAFA;
 }
 
-.card {
-	width: 32%;
-	border-radius: 2px;
+.content img {
+	height: 150px;
+}
+
+.col-3 {
+	background-color: white;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
-  	padding:5px;
-  	background-color: white;
-  	margin-right: 2%
+  	border-radius: 2px;
+	width: 32%;
+	box-sizing: border-box;
+	margin-right: 2%;
 }
 
-.card:last-child {
+.col-3:last-child {
 	margin-right: 0;
 }
 
-.card-img {
-	height: 140px;
-}
-
-.card-content {
-	padding: 10px;
-}
-
 .self {
-	width: 60%;
-	margin: auto;
-	height: 350px;
+	padding-top: 10px;
+	height: 400px;
+	background-color: white;
 }
 
-.img-wrapper-center {
-	width: 30%;
+.self .photo-container {
+	width: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: -50px;
 }
-
 .self img {
 	border-radius: 50%;
-	margin-top: -30px;
+	
 }
 
 .self h2 {
 	text-align: center;
+	font-family: "Century Gothic", sans-serif;
+	font-size: 20px;
 }
 
-.footer-nav {
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.before-footer {
+.self p {
+	max-width: 600px;
 	text-align: center;
-	display: flex;
-	
-
-}
-
-.before-footer li {
-	display: block;
-
+	font-size: 14px; 
 	margin: 0 auto;
 }
 
-.before-footer a {
-	display: block;
-	padding: 10px;
-	min-width: 48px;
-}
-
-.footer {
+footer {
 	background-color: black;
-	height: 400px;
+	height: 450px;
+	position: relative;
 }
 
-.separator {
-	background-color: rgba(255,255,255,0.4);
-	height: 1px;
+
+.footer-nav {
+	width: 30%;
+	margin: 0 auto;
+}
+
+footer nav {
+	display: flex;
+	margin: auto;
+}
+
+.footer-nav a {
+	flex:1;
+}
+
+hr {
+	border-color: rgba(255,255,255,.4);
+	padding: 0;
+	margin: 0;
+}
+
+.addition-content {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	width: 80%;
+	margin: 0 auto;
+	color: white;
+	display: flex;
 }
 
 .col-5 {
 	width: 20%;
 }
 
-.row {
-	width: 80%;
-	margin: 0 auto;
-	padding-top: 40px;
-	display: flex;
+.addition-content p{
+	text-align: left;
 }
 
-p {
+dt a {
 	color: white;
+	text-decoration: none;
 }
 
-.banquan {
-	margin-top: 40px;
-	position: relative;
-
-	height: 50px;
+dt a:hover {
+	text-decoration: underline;
 }
 
-.msg {
-	width: 4em;
+footer p {
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+footer .github {
 	position: absolute;
-
-	left: 0px;
-	right: 0px;
-
-	margin: auto;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
-.msg-cat {
-	width: 30px;
-	position: absolute;
-	padding-top: 50px;
-	left: 0px;
-	right: 0px;
 
-	margin: auto;
+
+.footer-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 70px;
 }
