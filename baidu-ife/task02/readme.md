@@ -2,6 +2,7 @@
 ##### Idea from mdl package by Google
 [Template from Google](http://getmdl.io/templates/dashboard/index.html)
 ![Screenshot of Google mdl template's nav bar](nav-bar-example.png?raw=true "Optional Title")
+
 1. Give the outside wrapper (like header) a **flex** property
 2. If you want to center the items, use **align-items: center**
 3. Then just put whatever you want on the left
