@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+}
+
+.container,
+.sections {
+	height: 100%;
+}
+
+.sections .section{
+	background-color: #000;
+	background-size: cover;
+	height: 100%;
+}
+
+#section0 {
+	background-image: url(bilibili1.jpg);
+}
+
+#section1 {
+	background-image: url(bilibili2.jpg);
+}
+
+#section2 {
+	background-image: url(bilibili3.jpg);
+}
+
+#section3 {
+	background-image: url(bilibili4.jpg);
+}
