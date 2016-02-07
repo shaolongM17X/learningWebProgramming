@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cat Clicker</title>
+	<style type="text/css">
+		body {
+			background-color: #FAFAFA;
+			font-family: 'Helvetica', sans-serif;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.main-container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.tabs {
+			width: 100%;
+			display: flex;
+			background-color: #3F51B5;
+			height: 48px;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+		}
+
+		.tab {
+			color: white;
+			text-decoration: none;
+			flex:1;
+			text-align: center;
+			line-height: 48px;
+			font-size: 18px;
+			position: relative;
+		}
+
+		.tabs .is-active::after {
+			height: 3px;
+			content: " ";
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			background: rgba(255,255,255,.7);
+			display: block;
+		}
+
+		.img-card {
+			width: 70%;
+			margin: 30px auto;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+			background-color: white;
+			position: relative;
+		}
+
+		.img-card img {
+			width: 100%;
+		}
+
+		.img-card .caption {
+			position: absolute;
+			bottom: 0px;
+			background-color: rgba(0,0,0,.5);
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			color: white;
+			display: flex;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		.caption p,
+		.caption span {
+			margin: 0 20px;
+		}
+
+		.spacer {
+			flex:1;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="main-container">
+		<div class="tabs">
+			<a href="#cat-image-1" class="tab is-active">Saber</a>
+			<a href="#cat-image-2" class="tab">Archer</a>
+			<a href="#cat-image-3" class="tab">Lancer</a>
+			<a href="#cat-image-4" class="tab">Nevermore</a>
+			<a href="#cat-image-5" class="tab">Excalibar</a>
+		</div>
+
+		<div class="img-card">
+			<img src="cat.jpg" alt="cute cat picture named Saber">
+			<div class="caption">
+				<span>Saber</span>
+				<div class="spacer"></div>
+				<p>0</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
