@@ -65,6 +65,14 @@ $(function(){
 
 		increaseCount: function() {
 			octopus.getCurrentCat().count += 1;
+		},
+
+		sentencesFromGod: function(name, url, clicks) {
+			var current_cat = octopus.getCurrentCat();
+			current_cat.name = name;
+			current_cat.src = url;
+			current_cat.count = clicks;
+			view.render();
 		}
 	};
 
@@ -93,6 +101,18 @@ $(function(){
 			$("#image").click(function(){
 				octopus.increaseCount();
 				view.render();
+			});
+
+			$("#admin, #cancel").click(function(){
+				$("#admin-form").toggleClass("is-invisible");
+			});
+
+			$("#admin-form").submit(function(e){
+				e.preventDefault();
+				var name = $("[name='name']").val();
+				var url = $("[name='url']").val();
+				var clicks = $("[name='clicks']").val();
+				octopus.sentencesFromGod(name, url, clicks);
 			});
 
 			view.render();
