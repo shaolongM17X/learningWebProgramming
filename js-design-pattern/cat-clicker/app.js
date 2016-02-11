@@ -30,6 +30,12 @@ $(function(){
 				name:"Excalibar",
 				src: "cat5.jpg",
 				count: 0
+			},
+
+			{
+				name: "zhazha",
+				src: "cat6.jpg",
+				count: 0
 			}
 		],
 
