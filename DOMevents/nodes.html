@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nodes</title>
+</head>
+<body>
+	<!-- koregacommentdesu -->
+	<div id="container">This is an element node</div>
+	<script type="text/javascript">
+		var divNode = document.getElementById("container");
+		var logIt = function(thingToLog) {
+			console.log(thingToLog.nodeName + "/" + thingToLog.nodeValue);
+		}
+		var attrNode = divNode.attributes[0];
+		var textNode = divNode.childNodes[0];
+		var commentNode = document.body.childNodes[1];
+		logIt(divNode);
+		logIt(attrNode);
+		logIt(textNode);
+		logIt(commentNode);
+		// document fragment
+		var frag = document.createDocumentFragment();
+		logIt(frag);
+
+		// function for testing whether or not the given thing is elemennt
+		var isElement = function (el) {
+			return !!el && el.nodeType === 1;
+		}
+		// possible to go wrong though
+		var a = {
+			nodeType: 1
+		}
+		console.log(isElement(divNode));
+		console.log(isElement(textNode));
+		console.log(isElement(a));
+	</script>
+</body>
+</html>
