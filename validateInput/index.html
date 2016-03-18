@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validate input</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <h3>Create a new password</h3>
+    <p>Password should meet the following requirements:</p>
+    <ul id="specifications">
+        <li>16-100 characters (longer is better)</li>
+        <li>At least one of these symbols: !, @, #, $, %, ^, &, *</li>
+        <li>At least one number</li>
+        <li>At least one lowercase letter</li>
+        <li>At least one uppercase letter</li>
+    </ul>
+    <label for="first" style="line-height: 30px;">Password:
+        <input id="first" type="text" placeholder="New password" autofocus>
+    </label>
+    <br>
+    <label for="second" style="line-height: 30px;">Type your password again
+        <input id="second" type="text" placeholder="Repeat password">
+    </label>
+    <br>
+    <input id="submit" type="submit">
+    <script src="app.js"></script>
+</body>
+</html>
